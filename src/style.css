@@ -1,0 +1,100 @@
+:root {
+  --line-border-fill: #3498db;
+  --line-border-empty: #e0e0e0;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 340px;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: 'Anton', sans-serif; 
+}
+
+.steps-container {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+.step-circle     {
+  
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 50%;
+  border: 3px solid var(--line-border-empty);
+  background-color: #FFFFFF !important;
+  color: #999999;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s ease;
+  
+}
+.progress-lane-container {
+
+  width: 100px;
+  height: 3px;
+  background-color: var(--line-border-empty);
+  
+  
+}
+
+.completed {
+  border: 3px solid var(--line-border-fill);
+  
+}
+
+.progress-lane {
+  width: 0%;
+  height: 3px;
+  transition: 0.2s;
+}
+.completed-lane {
+  width: 100%;
+  
+  background-color: var(--line-border-fill);
+  transition: width 0.2s;
+  
+  
+}
+.buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+  
+}
+button {
+  width: 120px;
+  padding: 0.5rem 2rem;
+  background-color: var(--line-border-fill);
+  color: var(--line-border-empty);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: var(--line-border-empty);
+  color: #FFFFFF;
+  cursor: not-allowed;
+}
+
+@keyframes barAnim {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}

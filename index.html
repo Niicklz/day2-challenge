@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Progress Steps</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="steps-container">
+          <div data-circle="" class="step-circle completed">
+            <p class="step">1</p>
+          </div>
+          <div class="progress-lane-container">
+            <div data-lane="" class="progress-lane"></div>
+          </div>
+          
+          <div data-circle="" class="step-circle">
+            <p class="step">2</p>
+          </div>
+          <div class="progress-lane-container">
+            <div data-lane="" class="progress-lane"></div>
+          </div>
+          <div data-circle="" class="step-circle">
+            <p class="step">3</p>
+          </div>
+          <div class="progress-lane-container">
+            <div data-lane="" class="progress-lane"></div>
+          </div>
+          <div data-circle="" class="step-circle">
+            <p class="step">4</p>
+          </div>
+        </div>
+        <div class="buttons-container">
+          <button data-button="back"  type="button">Atras</button>
+          <button  data-button="foward" type="button">Adelante</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
